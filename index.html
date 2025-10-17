@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyborad" content="semantica, web, html">
+    <meta name="description" content="Explicaicon de la web semantica">
+    <meta author="Fabian Florian">
+    <title>Pagina web semantica</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>MI Pagina web semantik</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Acreca de mi</a></li>
+            <li><a href="#sobre-mi">Servicios</a></li>
+            <li><a href="#servicios">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="backimg">
+            <div class="hero">
+                <h2>Bienvenido a mi sitio web</h2>
+                <p>Diseño con HTML semantico y estilo moderno</p>
+            </div>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre mi </h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis sequi libero iusto fugit ad rerum, quam aperiam soluta? Rerum iure architecto veniam ea excepturi quo beatae magnam harum tempora. Non.</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>ofrexco servicios de desarrollo web, diseño grafico y creacion de contenido digital. Mi objetico..jsahdjhj</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quisquam libero praesentium optio quae debitis harum, architecto ipsum, modi, neque officiis illum obcaecati error inventore ea repellat a natus sunt?</p>
+            <ul>
+                <li>Asesorias diseño web</li>
+                <li>Desarrollo de aplicaciones moviles</li>
+                <li>Analitica de datos</li>
+                <li>Inteligencia Artificial</li>
+            </ul>
+
+            <section>
+                <p class="fuente">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quam aliquam distinctio veritatis quasi facere voluptatibus eos fuga, harum aliquid assumenda in vero, tempore, illo laborum praesentium quibusdam magni nobis.</p>
+            </section>
+        </section>
+
+        <section>
+            <div>
+                <h2 id="contador">0</h2>
+            </div>
+            <div>
+                <label for="contador">contador</label>
+                <button type="button" id="incrementar">Incrementar valor del contador</button>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        let contador=0;
+        document.getElementById("incrementar").addEventListener("click", function(){ 
+            //contador = contador + 1;
+            contador++;
+            document.getElementById("contador").textContent = contador;
+         });
+    </script>
+</body>
+<footer>
+    <p>2025 Mi pagina web - <a href="">Contacto</a></p>
+</footer>
+</html>
